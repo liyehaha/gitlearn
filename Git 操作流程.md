@@ -50,7 +50,7 @@
 	```
 	
 ### 4: 将修改提交到仓库。
-使用`git commit`命令可以把已经添加到版本管理中的文件，提交到仓库中(本地或远		程)。
+使用`git commit`命令可以把已经添加到版本管理中的文件，提交到仓库中(本地或远程)。
 	
 	```
 	$ touch 123
@@ -70,7 +70,7 @@
 	```
 	
 ### 5: 切换到master分支，并合并代码。
-执行完上面的步骤以后，当前的开发分支的最新版(HEAD版本)已经有修	改好的代码了，现在需要将代码提交到远程。首先要切换到master分支，执行`git checkout master`。切换后，	为了保证本地master分支的代码和远端master的代码同步，需要先使用`git pull`更新一下。更新好以后就可以使	用`git merge`命令合并代码了。
+执行完上面的步骤以后，当前的开发分支的最新版(HEAD版本)已经有修改好的代码了，现在需要将代码提交到远程。首先要切换到master分支，执行`git checkout master`。切换后，为了保证本地master分支的代码和远端master的代码同步，需要先使用`git pull`更新一下。更新好以后就可以使	用`git merge`命令合并代码了。
 	
 	```
 	$ git checkout master
@@ -83,9 +83,10 @@
 	CONFLICT (content): Merge conflict in 123
 	Automatic merge failed; fix conflicts and then commit the result.
 	```
-	<a color="red">CONFLICT (content): Merge conflict in 123
-	Automatic merge failed; fix conflicts and then commit the result.</a></br>
-	这里出现了一个错误，原因是因为有冲突，提示`Automatic merge failed`，这时候我们就需要解决冲突后在重新	commit文件，然后再提交到远程的master。
+	> CONFLICT (content): Merge conflict in 123
+	> Automatic merge failed; fix conflicts and then commit the result.
+	
+	这里出现了一个错误，原因是因为有冲突，提示`Automatic merge failed`，这时候我们就需要解决冲突后在重新commit文件，然后再提交到远程的master。
 		
 	```
 	<<<<<<< HEAD
@@ -102,7 +103,8 @@
 	123
 	234
 	```
-	这时候我们重新将文件添加到版本控制、提交到仓库、提交到远程master就可以了。<a color="red">（如果没有冲突，直接执行`git push origin master`命令就可以了，不需要重新提交）</a>
+	> 这时候我们重新将文件添加到版本控制、提交到仓库、提交到远程master就可以了。
+	> (如果没有冲突，直接执行`git push origin master`命令就可以了，不需要重新提交)
 		
 	```
 	$ git add 123
@@ -130,7 +132,7 @@
 	nothing to commit, working tree clean
 	```
 	
-	当看到最后一句话<a color="red">nothing to commit, working tree clean</a>时，说明本地的代码已	经全部提交完成。</br>
+	当看到最后一句话`nothing to commit, working tree clean`时，说明本地的代码已经全部提交完成。</br>
 	
 	</br>
 	
