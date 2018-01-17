@@ -83,10 +83,10 @@
 	CONFLICT (content): Merge conflict in 123
 	Automatic merge failed; fix conflicts and then commit the result.
 	```
-	> CONFLICT (content): Merge conflict in 123
-	> Automatic merge failed; fix conflicts and then commit the result.
-	
-	这里出现了一个错误，原因是因为有冲突，提示`Automatic merge failed`，这时候我们就需要解决冲突后在重新commit文件，然后再提交到远程的master。
+> CONFLICT (content): Merge conflict in 123
+> Automatic merge failed; fix conflicts and then commit the result.
+
+这里出现了一个错误，原因是因为有冲突，提示`Automatic merge failed`，这时候我们就需要解决冲突后在重新commit文件，然后再提交到远程的master。
 		
 	```
 	<<<<<<< HEAD
@@ -103,8 +103,8 @@
 	123
 	234
 	```
-	> 这时候我们重新将文件添加到版本控制、提交到仓库、提交到远程master就可以了。
-	> (如果没有冲突，直接执行`git push origin master`命令就可以了，不需要重新提交)
+> 这时候我们重新将文件添加到版本控制、提交到仓库、提交到远程master就可以了。
+> (如果没有冲突，直接执行`git push origin master`命令就可以了，不需要重新提交)
 		
 	```
 	$ git add 123
