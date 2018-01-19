@@ -132,11 +132,11 @@
 	nothing to commit, working tree clean
 	```
 	
-	当看到最后一句话`nothing to commit, working tree clean`时，说明本地的代码已经全部提交完成。</br>
+当看到最后一句话`nothing to commit, working tree clean`时，说明本地的代码已经全部提交完成。</br>
 	
-	</br>
+</br>
 	
-	当我们再继续新的开发时，还需要切换的开发分支。这时候由于远程的开发分支`origin test-1`中的代码已经不是	master的最新代码了，建议先删除掉本地和远程的开发分支`test-`，然后再重新基于master的最新代码创建分支	后，进行开发。具体操作如下:
+当我们再继续新的开发时，还需要切换的开发分支。这时候由于远程的开发分支`origin test-1`中的代码已经不是master的最新代码了，建议先删除掉本地和远程的开发分支`test-1`，然后再重新基于master的最新代码创建分支后，进行开发。具体操作如下:
 	
 	```
 	$ git branch
